@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sleep Duration ↔ Energy Levels · Longevity Analytics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<nav>
+<div class="brand"><div class="logo">L</div>Longevity Analytics</div>
+<div class="lbl">Use case</div>
+<a href="#overview">Overview</a>
+<a href="#sources">Data sources</a>
+<a href="#chain">How it fits together</a>
+<a href="#charts">Charts A–B–C</a>
+<a href="#who">Who benefits</a>
+<a href="#correlations">All correlations</a>
+<a href="#evidence">Evidence (GRADE)</a>
+<a href="#refs">References</a>
+</nav>
+<main>
+<div id="overview" class="crumb">Home / Use cases / Sleep / Energy</div>
+<h1>Sleep duration ↔ Energy levels</h1>
+<p class="sub">Combines NHANES (USA), RKI DEGS1 (Germany) and PubMed experiments · 18,985 participants with measured data</p>
+<section id="sources">
+<div class="grid4">
+<div class="card kpi">
+<div class="top">NHANES (USA) <span class="tag">Survey</span></div>
+<div class="num">10,896</div>
+<div class="what">US adults asked how long they sleep and whether tiredness gets in the way of daily tasks</div>
+<div class="cite">Shows: sleep hours → daytime tiredness<br>(Wheaton et al., 2011)</div>
+</div>
+<div class="card kpi">
+<div class="top">RKI DEGS1 (Germany) <span class="tag">Survey</span></div>
+<div class="num">7,988</div>
+<div class="what">German adults aged 18–79: hours of sleep, sleep problems, tiredness — our target market</div>
+<div class="cite">Shows: how many people sleep too little<br>(Schlack et al., 2013)</div>
+</div>
+<div class="card kpi">
+<div class="top">PubMed experiments <span class="tag">Trials</span></div>
+<div class="num">101</div>
+<div class="what">People whose sleep was cut or extended in 4 controlled studies, with fatigue / vigour measured</div>
+<div class="cite">Shows: more sleep → less fatigue (cause)<br>(Van Dongen et al., 2003; Kamdar et al., 2004; Mah et al., 2011; Mantua et al., 2019)</div>
+</div>
+<div class="card kpi total">
+<div class="top">Combined <span class="tag">Total</span></div>
+<div class="num">18,985</div>
+<div class="what">participants with measured data</div>
+<div class="cite">Plus a meta-analysis of 154 experiments (N = 5,717) used to rate the evidence (Palmer et al., 2024)</div>
+</div>
+</div>
+</section>
+<section id="chain" class="card">
+<h2>How the three sources fit together</h2>
+<p class="sub">No single dataset measures sleep hours → energy for everyone. Each source answers one link of the chain.</p>
+<div class="chain">
+<div class="step"><b>STEP A</b>Sleep duration<br><span class="src">hours per night</span></div>
+<div class="arrow"><span>→</span>too few hours is common<br><i>NHANES · DEGS1</i></div>
+<div class="step"><b>STEP B</b>Sleep debt / daytime sleepiness<br><span class="src">measurable: ESS, PVT, “too tired to…”</span></div>
+<div class="arrow"><span>→</span>tiredness, if you sleep more it drops<br><i>NHANES · PubMed</i></div>
+<div class="step"><b>STEP C</b>Energy level<br><span class="src">fatigue ↓ / vigour ↑ (POMS)</span></div>
+</div>
+<div class="plain"><b>IN PLAIN WORDS</b><br>About 1 in 3 adults sleeps less than 7 hours. Those people feel more tired during the day. When people who sleep too little get more sleep, their fatigue goes down and their energy goes up. Sleeping more than you need does not add extra energy.</div>
+</section>
+<section id="charts">
+<div class="grid3">
+<div class="card">
+<div class="chart-title">A · How many people sleep too little?</div>
+<div class="src">Share of adults by usual sleep per night</div>
+<div class="bars">
+<div class="split" style="margin-top:4px;border:0;padding:0">USA · NHANES 2005–08 (n = 10,896)</div>
+<div class="brow"><span>&lt; 7 h</span><div class="track"><div class="fill" style="width:37.1%" data-tip="NHANES: 37.1% sleep less than 7 h on weekdays"></div></div><span class="val">37.1%</span></div>
+<div class="brow"><span>7–9 h</span><div class="track"><div class="fill ref" style="width:60.5%" data-tip="NHANES: 60.5% sleep 7–9 h"></div></div><span class="val">60.5%</span></div>
+<div class="brow"><span>&gt; 9 h</span><div class="track"><div class="fill ref" style="width:2.4%" data-tip="NHANES: 2.4% sleep more than 9 h"></div></div><span class="val">2.4%</span></div>
+<div class="split">Germany · DEGS1 2008–11 (n = 7,988)</div>
+<div class="brow"><span>≤ 5 h</span><div class="track"><div class="fill" style="width:12.3%" data-tip="DEGS1: 12.3% sleep 5 h or less"></div></div><span class="val">12.3%</span></div>
+<div class="brow"><span>6–8 h</span><div class="track"><div class="fill ref" style="width:81.6%" data-tip="DEGS1: 81.6% sleep 6–8 h"></div></div><span class="val">81.6%</span></div>
+<div class="brow"><span>≥ 9 h</span><div class="track"><div class="fill ref" style="width:6.1%" data-tip="DEGS1: 6.1% sleep 9 h or more"></div></div><span class="val">6.1%</span></div>
+</div>
+<div class="answer"><b>Many.</b> More than 1 in 3 US adults sleep under 7 h; 1 in 8 Germans get 5 h or less. (Wheaton et al., 2011; Schlack et al., 2013)</div>
+</div>
+<div class="card">
+<div class="chart-title">B · Are short sleepers more tired?</div>
+<div class="src">Adults who have trouble concentrating because they feel sleepy or tired · NHANES</div>
+<div class="bars" style="margin-top:28px">
+<div class="brow"><span>Sleep &lt; 7 h</span><div class="track"><div class="fill" style="width:58.6%" data-tip="29.3% of short sleepers (&lt;7 h) report trouble concentrating from tiredness"></div></div><span class="val">29.3%</span></div>
+<div class="brow"><span>Sleep 7–9 h</span><div class="track"><div class="fill ref" style="width:38.8%" data-tip="19.4% of 7–9 h sleepers report trouble concentrating from tiredness"></div></div><span class="val">19.4%</span></div>
+</div>
+<div class="note" style="margin-top:20px">Bar length scaled to 50% max.</div>
+<div class="answer"><b>Yes.</b> About 3 in 10 short sleepers vs 2 in 10 normal sleepers say tiredness makes it hard to concentrate — roughly 50% more. All six daily-life problems measured were more common in short sleepers. (Wheaton et al., 2011)</div>
+</div>
+<div class="card">
+<div class="chart-title">C · Does changing sleep change energy?</div>
+<div class="src">Effect of losing sleep on mood, pooled from experiments (Hedges’ g; bigger = stronger effect)</div>
+<div class="bars">
+<div class="brow"><span>Positive mood / vigour ↓</span><div class="track"><div class="fill" style="width:94%" data-tip="Sleep loss lowers positive mood: g = −0.94 (large), 64 studies (Tomaso et al., 2021)"></div></div><span class="val">−0.94</span></div>
+<div class="brow"><span>Negative mood ↑</span><div class="track"><div class="fill ref" style="width:45%" data-tip="Sleep loss raises negative mood: g = +0.45 (moderate) (Tomaso et al., 2021)"></div></div><span class="val">+0.45</span></div>
+</div>
+<div class="split">And the other way round — adding sleep</div>
+<p class="sub" style="font-size:13px">Athletes who slept <b>+111 min per night</b> for 5–7 weeks: fatigue ↓, vigour ↑ (P &lt; 0.001).</p>
+<div class="answer"><b>Yes.</b> Cutting sleep causes a large drop in positive mood and energy. Extending sleep in people who sleep too little lowers fatigue and raises vigour. (Tomaso et al., 2021; Mah et al., 2011; Kamdar et al., 2004)</div>
+</div>
+</div>
+</section>
+<section id="who">
+<h2>Who benefits — by starting sleep duration</h2>
+<div class="who" style="margin-top:10px">
+<div class="card"><span class="pill p-high">Short sleepers (&lt; 7 h)</span><h3 style="margin-top:10px">Biggest gain</h3><p class="sub">Sleeping 1–2 h more reduced fatigue and raised vigour in trials (Kamdar et al., 2004; Mah et al., 2011).</p></div>
+<div class="card"><span class="pill p-mod">Normal sleepers (7–9 h)</span><h3 style="margin-top:10px">Small gain</h3><p class="sub">A week of 10 h in bed lowered fatigue a little, but sleepiness and mood did not change (Mantua et al., 2019).</p></div>
+<div class="card"><span class="pill p-low">Long sleepers (≥ 9 h)</span><h3 style="margin-top:10px">No expected gain</h3><p class="sub">More is not better: long sleep is linked to higher all-cause mortality, HR 1.29 (Gu et al., 2024). Check for other causes of tiredness.</p></div>
+</div>
+</section>
+<section id="correlations" class="card">
+<h2>All correlations collected</h2>
+<p class="sub">Factor, what it is linked to, direction and result — filter by study type or search.</p>
+<div class="filters" id="filters">
+<button class="on" data-f="all">All</button>
+<button data-f="Survey">Surveys</button>
+<button data-f="Trial">Trials</button>
+<button data-f="Meta-analysis">Meta-analyses</button>
+<input id="q" type="search" placeholder="Search (e.g. fatigue, Germany)…" aria-label="Search correlations">
+</div>
+<table>
+<thead><tr><th>Source</th><th>Type</th><th>Factor</th><th>Linked to</th><th>Direction</th><th>Result</th><th>n</th><th>Citation</th></tr></thead>
+<tbody id="tbody"></tbody>
+</table>
+<div class="note">“Survey” rows show associations; “Trial” rows show cause and effect.</div>
+</section>
+<section id="evidence" class="card">
+<h2>Strength of evidence (GRADE)</h2>
+<p class="sub">Rated with the GRADE domains: study design, risk of bias, consistency, directness, precision (Guyatt et al., 2008).</p>
+<div style="margin-top:8px">
+<div class="grade"><span class="pill p-high">High</span><div>Losing sleep lowers energy and positive mood — 154 experiments, N = 5,717 (Palmer et al., 2024; Tomaso et al., 2021)</div></div>
+<div class="grade"><span class="pill p-mod">Moderate</span><div>Short sleepers who extend sleep feel less fatigued and more vigorous — small trials, consistent results (Kamdar et al., 2004; Mah et al., 2011)</div></div>
+<div class="grade"><span class="pill p-low">Low / none</span><div>No real energy boost expected from extra sleep if you already sleep 7–9 h (Mantua et al., 2019)</div></div>
+<div class="grade"><span class="pill p-cau">Caution</span><div>≥ 9 h is linked to higher mortality, HR 1.29 (Gu et al., 2024); people underrate how impaired they are after 2 weeks at 6 h (Van Dongen et al., 2003)</div></div>
+</div>
+<div class="bottom">Track your sleep first, aim for 7–9 h, let the data decide.</div>
+</section>
+<section id="refs" class="card">
+<h2>References (Harvard)</h2>
+<ul class="refs" id="refs-list">
+<li>Gu, J., Wu, H., Diao, W., Ji, Y., Li, J. and Huo, J. (2024) ‘Association of sleep duration with risk of all-cause and cause-specific mortality among American adults: a population-based cohort study’, <i>Nature and Science of Sleep</i>, 16, pp. 949–962. doi:10.2147/NSS.S469638.</li>
+<li>Guyatt, G.H. et al. (2008) ‘GRADE: an emerging consensus on rating quality of evidence and strength of recommendations’, <i>BMJ</i>, 336(7650), pp. 924–926.</li>
+<li>Kamdar, B.B., Kaplan, K.A., Kezirian, E.J. and Dement, W.C. (2004) ‘The impact of extended sleep on daytime alertness, vigilance, and mood’, <i>Sleep Medicine</i>, 5(5), pp. 441–448. doi:10.1016/j.sleep.2004.05.003.</li>
+<li>Mah, C.D., Mah, K.E., Kezirian, E.J. and Dement, W.C. (2011) ‘The effects of sleep extension on the athletic performance of collegiate basketball players’, <i>Sleep</i>, 34(7), pp. 943–950. doi:10.5665/SLEEP.1132.</li>
+<li>Mantua, J. et al. (2019) ‘Sleep extension reduces fatigue in healthy, normally-sleeping young adults’, <i>Sleep Science</i>, 12(1), pp. 21–27. doi:10.5935/1984-0063.20190056.</li>
+<li>Ng, A.E., Black, L.I. and Adjaye-Gbewonyo, D. (2026) <i>Short sleep duration and sleep difficulties among adults: United States, 2024</i>. NCHS Data Brief No. 559. Hyattsville, MD: National Center for Health Statistics.</li>
+<li>Palmer, C.A. et al. (2024) ‘Sleep loss and emotion: a systematic review and meta-analysis of over 50 years of experimental research’, <i>Psychological Bulletin</i>, 150(4), pp. 440–463. doi:10.1037/bul0000410.</li>
+<li>Schlack, R., Hapke, U., Maske, U., Busch, M.A. and Cohrs, S. (2013) ‘Frequency and distribution of sleep problems and insomnia in the adult population in Germany: results of the German Health Interview and Examination Survey for Adults (DEGS1)’, <i>Bundesgesundheitsblatt</i>, 56(5–6), pp. 740–748. doi:10.1007/s00103-013-1689-2.</li>
+<li>Tomaso, C.C., Johnson, A.B. and Nelson, T.D. (2021) ‘The effect of sleep deprivation and restriction on mood, emotion, and emotion regulation: three meta-analyses in one’, <i>Sleep</i>, 44(6), zsaa289. doi:10.1093/sleep/zsaa289.</li>
+<li>Van Dongen, H.P.A., Maislin, G., Mullington, J.M. and Dinges, D.F. (2003) ‘The cumulative cost of additional wakefulness: dose-response effects on neurobehavioral functions and sleep physiology from chronic sleep restriction and total sleep deprivation’, <i>Sleep</i>, 26(2), pp. 117–126.</li>
+<li>Wheaton, A.G., Liu, Y., Perry, G.S. and Croft, J.B. (2011) ‘Effect of short sleep duration on daily activities — United States, 2005–2008’, <i>Morbidity and Mortality Weekly Report</i>, 60(8), pp. 239–242.</li>
+</ul>
+</section>
+</main>
+</div>
+<div id="tip" role="tooltip"></div>
+<script src="app.js"></script>
+</body>
+</html>
